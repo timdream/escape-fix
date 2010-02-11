@@ -1,0 +1,19 @@
+
+ Very simple script that fixes escape code in Mozilla l10n files,
+ i.e. turn your legacy \uXXXX in strings into real UTF-8 chars.
+
+ To run it, do 
+
+     $ find | grep -v \.hg | xargs php escape-fix.php
+
+ in the repo directory.
+ the "grep -v \.hg" is very important, otherwise you could ruin your repo
+ directory.
+
+
+ Regards,
+
+
+ Tim Chien [:timdream]
+ Mozilla Taiwan Community
+ 
